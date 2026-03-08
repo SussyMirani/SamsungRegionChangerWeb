@@ -1,0 +1,21 @@
+#child {
+    display: inline-block;
+    margin: 2px;
+}
+
+#child p {
+    font-weight: bold;
+}
+button {
+    margin: 0 auto;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+}
