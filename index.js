@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('gif').style.display = 'none';
     })
     document.getElementById('changeBtn').addEventListener('click', async (e) => {
-        let deviceInfo = prompt('Enter Region. Example: XXV')
+        let deviceInfo = prompt('Enter Region. Example: XXV').toUpperCase()
         let arr = ["AT+SWATD=0\r\n","AT+ACTIVATE=0,0,0\r\n","AT+SWATD=1\r\n",`AT+PRECONFG=2,${deviceInfo}\r
 `,"AT+CFUN=1,1\r\n"]
         const port = await navigator.serial.requestPort();
